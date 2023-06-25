@@ -1,0 +1,156 @@
+<!-- <div class="split left">
+  <div class="centered">
+
+    <div class="account-box">
+      <div class="account-wrapper">
+        <h3 class="account-title">Login</h3>
+        <p class="account-subtitle">Access to our dashboard</p>
+
+        <form [formGroup]="form" (ngSubmit)="submit()">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input class="form-control" type="text" formControlName="email" id="email"
+              [ngClass]="{'is-invalid': f['email'].touched && f['email'].invalid}" />
+            <div class="text-danger" *ngIf="CustomControler ?.status === 'email'">
+              {{ CustomControler.message }}
+            </div>
+            <div *ngIf="f['email'].touched && f['email'].invalid" class="text-danger">
+              <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required.</div>
+              <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                Please, enter valid email address.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <label>Password</label>
+              </div>
+            </div>
+            <div class="position-relative">
+              <input class="form-control" [type]="Toggledata ? 'password' : 'text'" formControlName="password"
+                id="password" [ngClass]="{'is-invalid': f['password'].touched && f['password'].invalid}" />
+              <span [ngClass]="Toggledata == true ? 'fa toggle-password fa-eye' : 'fa toggle-password fa-eye-slash'"
+                (click)="iconLogle()"></span>
+            </div>
+            <div *ngIf="f['password'].touched && f['password'].invalid" class="text-danger">
+              <div *ngIf="f['password'].errors && f['password'].errors['required']">
+                Password is required.
+              </div>
+            </div>
+            <div class="text-danger" *ngIf="CustomControler ?.status === 'password'">{{ CustomControler.message }}
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-auto">
+              <a class="text-muted" routerLink="/login/forgot">
+                Forgot password?
+              </a>
+            </div>
+
+          </div>
+          <div class="form-group text-center">
+            <button class="btn btn-primary account-btn" [disabled]="form.invalid" type="submit">Login</button>
+          </div>
+          <div class="account-footer">
+            <p>Don't have an account yet? <a routerLink="/login/register">Register</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="split right">
+  <div>
+    <div class="col-lg-4">
+      <div class="banner-imgs">
+          <img alt="jobhub" src="assets/imgs/page/homepage3/banner-main.png" class="img-responsive shape-1">
+          <span class="banner-sm1"><img alt="jobhub" src="assets/imgs/page/homepage3/banner-sm1.png" class="img-responsive shape-3"></span>
+          <span class="banner-sm2"><img alt="jobhub" src="assets/imgs/page/homepage3/banner-sm2.png" class="img-responsive shape-2"></span>
+          <span class="banner-sm3"><img alt="jobhub" src="assets/imgs/page/homepage3/banner-sm3.png" class="img-responsive shape-2"></span>
+      </div>
+  </div>
+  </div>
+</div> -->
+
+<section class="section-box">
+  <div class="banner-hero banner-homepage-3">
+      <div class="banner-inner">
+          <div class="row">
+              <div class="col">
+                  <div class="block-banner">
+                    <div class="account-box">
+                      <div class="account-wrapper">
+                        <h3 class="account-title">Login</h3>
+                        <p class="account-subtitle">Access to our dashboard</p>
+                
+                        <form [formGroup]="form" (ngSubmit)="submit()">
+                          <div class="form-group">
+                            <label>Email Address</label>
+                            <input class="form-control" type="text" formControlName="email" id="email"
+                              [ngClass]="{'is-invalid': f['email'].touched && f['email'].invalid}" />
+                            <div class="text-danger" *ngIf="CustomControler ?.status === 'email'">
+                              {{ CustomControler.message }}
+                            </div>
+                            <div *ngIf="f['email'].touched && f['email'].invalid" class="text-danger">
+                              <div *ngIf="f['email'].errors && f['email'].errors['required']">Email is required.</div>
+                              <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                                Please, enter valid email address.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col">
+                                <label>Password</label>
+                              </div>
+                            </div>
+                            <div class="position-relative">
+                              <input class="form-control" [type]="Toggledata ? 'password' : 'text'" formControlName="password"
+                                id="password" [ngClass]="{'is-invalid': f['password'].touched && f['password'].invalid}" />
+                              <span [ngClass]="Toggledata == true ? 'fa toggle-password fa-eye' : 'fa toggle-password fa-eye-slash'"
+                                (click)="iconLogle()"></span>
+                            </div>
+                            <div *ngIf="f['password'].touched && f['password'].invalid" class="text-danger">
+                              <div *ngIf="f['password'].errors && f['password'].errors['required']">
+                                Password is required.
+                              </div>
+                            </div>
+                            <div class="text-danger" *ngIf="CustomControler ?.status === 'password'">{{ CustomControler.message }}
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-auto">
+                              <a class="text-muted" routerLink="/login/forgot">
+                                Forgot password?
+                              </a>
+                            </div>
+                
+                          </div>
+                          <div class="form-group text-center">
+                            <button class="btn btn-primary account-btn" [disabled]="form.invalid" type="submit">Login</button>
+                          </div>
+                          <div class="account-footer">
+                            <p>Don't have an account yet? <a routerLink="/login/register">Register</a></p>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="banner-imgs">
+                      
+                      <span class="banner-sm1"><img alt="jobhub" src="assets/img/login/banner-sm1.png" class="img-responsive shape-3"></span>
+                      <span class="banner-sm4"><img alt="jobhub" src="assets/img/login/banner-main.png" class="img-responsive shape-1"></span>
+                      <span class="banner-sm2"><img alt="jobhub" src="assets/img/login/banner-sm2.png" class="img-responsive shape-2"></span>
+                      <span class="banner-sm3"><img alt="jobhub" src="assets/img/login/banner-sm3.png" class="img-responsive shape-2"></span>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
